@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  line-height: 1.65;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+
+  --color-accent: #ff3410;
+  --color-accent-soft: rgba(255, 52, 16, 0.12);
+  --color-bg: #f4f4f4;
+  --color-bg-strong: #e8e8e8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2f2f2;
+  --color-border: #dadada;
+  --color-border-strong: #c4c4c4;
+  --color-text: #1b1b1b;
+  --color-text-muted: #5e5e5e;
+  /* No shadows per user request */
+  --color-shadow: none;
+
+  --color-positive: #18a663;
+  --color-negative: #d03030;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: #0f0f0f;
+    --color-bg-strong: #181818;
+    --color-surface: #1c1c1c;
+    --color-surface-alt: #242424;
+    --color-border: #303030;
+    --color-border-strong: #454545;
+    --color-text: #f3f3f3;
+    --color-text-muted: #9b9b9b;
+  --color-shadow: none;
+  }
+}
+
+/* Allow explicit theme switching via data-theme attribute on <html> */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0f0f0f;
+  --color-bg-strong: #181818;
+  --color-surface: #1c1c1c;
+  --color-surface-alt: #242424;
+  --color-border: #303030;
+  --color-border-strong: #454545;
+  --color-text: #f3f3f3;
+  --color-text-muted: #9b9b9b;
+  --color-shadow: none;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #f4f4f4;
+  --color-bg-strong: #e8e8e8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2f2f2;
+  --color-border: #dadada;
+  --color-border-strong: #c4c4c4;
+  --color-text: #1b1b1b;
+  --color-text-muted: #5e5e5e;
+  --color-shadow: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
